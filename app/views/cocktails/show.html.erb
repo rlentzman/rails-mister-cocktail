@@ -1,5 +1,4 @@
-<h1>Cocktails#show</h1>
-<p>Find me in app/views/cocktails/show.html.erb</p>
+
 
 <h1><%= @cocktail.name %></h1>
 
@@ -10,6 +9,7 @@
       method: :delete,
       data: { confirm: "Are you sure?" } %></p>
       <% end %>
-<p><%= link_to "Add an ingredient", new_cocktail_dose_path(@cocktail) %></p>
+
+<p><%= link_to "Add an description", new_cocktail_dose_path(@cocktail) %></p>
 <%= link_to "back to the cocktails list", root_path %>
 
